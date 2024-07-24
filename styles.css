@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.üst-header {
+    display: flex;
+   
+    justify-content: right;
+    background-color: rgb(31, 31, 131);
+    padding: 10px 50px; /* Yatay ve dikey iç boşluklar */
+}
+
+.tel {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.mail {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    background-color: #173251;
+    color: #fff;
+    padding:0;
+    display: flex;
+    justify-content: space-between; /* Sağ ve sol arasında boşluk bırak */
+    align-items: center; /* Dikey hizalama */
+}
+
+.logo-container {
+    flex: 0; /* Logonun alabileceği maksimum yer */
+}
+
+nav {
+    flex: 1; /* Menünün alabileceği maksimum yer */
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* İlk öğe için sol boşluk olmasın */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: rgb(129, 129, 255);
+    transition: 0.3s ease;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    background-color: #173251;
+    height: 500px;
+   
+}
+
+.content h1 {
+    color: #ffffff;
+    margin-top: 120px;
+}
+
+.content p {
+    color: #ffffff;
+}
+
+.logo {
+    width: 150px; /* Logonun maksimum genişlikte olmasını sağlar */
+    height: auto; /* Otomatik yükseklik */
+    margin-left: 50px;
+}
+.nesil-medya-resim {
+    margin-right: 20px; /* Metinden sağa boşluk */
+    float: left; /* Metnin soluna yaslanacak şekilde resmi konumlandırır */
+}
+#image1{
+    margin-left: 80px;
+    margin-top: -150px;
+    border-radius: 50px;
+}
+#image2{
+    margin-top: 50px;
+    border-radius: 50px;
+}
+#image3{
+    margin-top: -150px;
+    border-radius: 50px;
+    margin-right: 50px
+}
+#button-contact{
+    height: 40px;
+    width: 120px;
+    font-size: 18px;
+    background-color:#32b3e1;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  margin:0px;
+  font-family:'Roboto';
+  text-align:center;
+}
+
+#container {
+  color:#ffffff;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+  padding-top:150px;  
+  width:100%;
+  bottom:35%;
+  display:block;
+  text-align: left;
+  left: 10%;
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;
+}
+#flip div:first-child div {
+  background:#4ec7f3;
+}
+
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+p {
+  position:fixed;
+  width:100%;
+  bottom:30px;
+  font-size:12px;
+  color:#999;
+  margin-top:200px;
+}
